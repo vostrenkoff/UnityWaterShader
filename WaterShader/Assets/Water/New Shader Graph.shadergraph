@@ -440,6 +440,9 @@
         },
         {
             "m_Id": "bd860045a3b54959bc6575cd44fd2017"
+        },
+        {
+            "m_Id": "880146cf46d34a5a8bcffe1356084146"
         }
     ],
     "m_GroupDatas": [],
@@ -1295,6 +1298,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "12465529baec4f7794644fe5f9ad2fa3"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "880146cf46d34a5a8bcffe1356084146"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dc99b931f5f14d7b830d3aba1e1b8839"
                 },
                 "m_SlotId": 1
             }
@@ -2667,7 +2684,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 10.0,
+    "m_Value": 0.0,
     "m_DefaultValue": 10.0,
     "m_Labels": []
 }
@@ -7723,6 +7740,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "64dc83a0680a4c91911ace65b121dc07",
+    "m_Id": 0,
+    "m_DisplayName": "frequency",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "6525e8e729dc4d08870db831c2c14434",
@@ -9507,6 +9539,41 @@
     },
     "m_Property": {
         "m_Id": "e520a230ec6f464ca15d1f544bd05fdf"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "880146cf46d34a5a8bcffe1356084146",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 2971.0,
+            "y": 1329.0001220703125,
+            "width": 127.00000762939453,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "64dc83a0680a4c91911ace65b121dc07"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "195292015192454da37b9ac73064f9e0"
     }
 }
 

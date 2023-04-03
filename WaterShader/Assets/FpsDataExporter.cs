@@ -4,6 +4,7 @@ using System.IO;
 public class FpsDataExporter : MonoBehaviour
 {
     private float fps;
+    private int testNum = 0;
     private string filePath;
     private StreamWriter fileWriter;
     private bool isWritingToSecondColumn;
@@ -24,9 +25,10 @@ public class FpsDataExporter : MonoBehaviour
     void Update()
     {
         // Toggle writing to the second column when the "r" key is pressed
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.R))
         {
             isWritingToSecondColumn = !isWritingToSecondColumn;
+            testNum++;
         }
     }
 
@@ -38,11 +40,11 @@ public class FpsDataExporter : MonoBehaviour
         // Write data to file
         if (isWritingToSecondColumn)
         {
-            fileWriter.WriteLine(Time.time + ",," + fps);
+            fileWriter.WriteLine(fps);
         }
         else
         {
-            fileWriter.WriteLine(Time.time + "," + fps);
+            fileWriter.WriteLine(fps);
         }
     }
 
